@@ -31,9 +31,9 @@ import { VERSION, SERVER_NAME } from "./constants.js";
       tool.name,
       {
         description: tool.description,
-        inputSchema: tool.inputSchema,
+        inputSchema: tool.inputSchema as never,
       },
-      tool.execute,
+      tool.execute as never,
     );
   });
 

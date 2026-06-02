@@ -3,8 +3,9 @@ import { taskTools } from "./task-tools.js";
 import { streamTools } from "./stream-tools.js";
 import { calendarTools } from "./calendar-tools.js";
 import { bulkTaskTools } from "./bulk-task-tools.js";
+import type { ToolWrapper } from "./shared.js";
 
-export const allTools = [
+export const allTools: ToolWrapper[] = [
   ...userTools,
   ...taskTools,
   ...streamTools,
